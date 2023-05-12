@@ -14,5 +14,9 @@ public abstract class AbsNameEntity {
     private Integer id;
 
     @Column(nullable = false)
-    private String name;
+    private String uzName;
+    @Column(nullable = false)
+    private String enName;
+    @Column(nullable = false)
+    private String ruName;
 }
