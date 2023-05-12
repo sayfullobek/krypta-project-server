@@ -1,5 +1,6 @@
 package it.universal.krypta.valyuta.server.entity;
 
+import it.universal.krypta.valyuta.server.entity.template.AbsEntity;
 import it.universal.krypta.valyuta.server.entity.template.AbsNameEntity;
 import lombok.*;
 
@@ -13,7 +14,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Coins extends AbsNameEntity {
+public class Coins extends AbsEntity {
+    private String name;
     private UUID photoId; //coinning rasmi
     private double percentage; //coinning fozi
     private double dollar; //coinning dollari

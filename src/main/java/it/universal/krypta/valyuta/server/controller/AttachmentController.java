@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/attachment/v1")
+@RequestMapping("/api/v1/attachment")
 @RequiredArgsConstructor
 public class AttachmentController {
     private final AttachmentService attachmentService;
